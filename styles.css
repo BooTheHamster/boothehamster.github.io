@@ -57,6 +57,11 @@ body {
     display: inline;
 }
 
+.project-source-code-link {
+    font-size: 15px;
+    display: inline;
+}
+
 .text-align-right {
     text-align: right
 }
