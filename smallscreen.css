@@ -1,71 +1,53 @@
-html {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-body {
-    background-color: #CBC6AF;
-    width: auto;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-}
-
-.container-left {
-    width: 50%;
+.container-description {
+    width: 100%;
     display: block;
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     margin-top: 10px;
+    height: 50%;
 }
 
-.container-right {
-    width: 50%;
+.container-projects {
+    width: 100%;
     display: block;
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    left: 0px;
     margin-bottom: 10px;
 }
 
 .username {
-    font-size: 20px;
-    margin-right: 10%;
+    font-size: 22pt;
+    margin-right: 5%;
+    margin-bottom: 10px;
 }
 
 .description {
-    font-size: 10px;
-    margin-right: 10%;
+    font-size: 14pt;
+    margin-right: 5%;
 }
 
-.hashtag {
-    font-size: 8px;
+.description-small {
+    font-size: 10pt;
+    margin-right: 5%;
+}
+
+.hashtag, .project-source-code-link {
+    font-size: 8pt;
     display: inline;
 }
 
 .project {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .project-title {
-    font-size: 12px;
+    font-size: 12pt;
     display: inline;
 }
 
 .project-text {
-    font-size: 10px;
+    font-size: 10pt;
     display: inline;
-}
-
-.project-source-code-link {
-    font-size: 8px;
-    display: inline;
-}
-
-.text-align-right {
-    text-align: right
-}
-
-.text-align-left {
-    text-align: left
 }
