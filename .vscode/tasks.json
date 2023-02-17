@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "run client",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"start"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "run docker",
+			"type": "shell",
+			"command": "docker",
+			"args": [
+				"compose",
+				"up",
+				"-d"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}\\docker"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "build docker",
+			"type": "shell",
+			"command": "docker",
+			"args": [
+				"build",
+				"--progress=plain",
+				"-t",
+				"boothehamstergithubio:latest",
+				"."
+			],
+			"options": {
+				"cwd": "${workspaceFolder}\\docker"
+			},
+			"problemMatcher": []
+		}
+	]
+}

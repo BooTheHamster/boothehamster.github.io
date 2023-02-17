@@ -1,0 +1,20 @@
+<div *ngFor="let project of projects"
+     class="project">
+  <div class="title">
+    <div class="project-title">
+      <a *ngIf="project.hasDemoUrl"
+         href="{{project.demoUrl}}">{{project.name}}</a>
+      <a *ngIf="project.hasSourceCodeUrl"
+         href="{{project.sourceCodeUrl}}">{{project.name}}</a>
+    </div>
+    <span>//</span>
+    <span class="description">{{project.description}}</span>
+  </div>
+  <div class="tags">
+    <div *ngFor="let hashtag of project.hashTags">{{hashtag.text}}</div>
+    <div *ngIf="project.hasSourceCodeUrl">
+      <a href="{{project.sourceCodeUrl}}">исходный код</a>
+    </div>
+  </div>
+</div>
+<div>
