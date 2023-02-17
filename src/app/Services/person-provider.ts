@@ -15,7 +15,7 @@ export class PersonProvider {
             'Олег Севостьянов',
             ['C#', 'Delphi'],
             ['.NET Core / .NET 6', 'HTML', 'CSS', 'TypeScript', 'Angular'],
-            ['python', 'powershell', 'javascript'],
+            ['python', 'powershell', 'javascript', 'ms sql', 'postgresql'],
             new Date('1978-06-01')
         );
     }

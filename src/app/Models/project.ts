@@ -1,13 +1,11 @@
-import { HashTag } from './hash-tag';
-
 /**
  * Описание проекта.
  */
 export class Project {
-    constructor (name: string, description: string, sourceCodeUrl: string, demoUrl: string | null, ... hashTags: HashTag[]) {
+    constructor (name: string, description: string, sourceCodeUrl: string, demoUrl: string | null, hashTags: string) {
         this.name = name;
         this.description = description;
-        this.hashTags = hashTags;
+        this.hashTags = (hashTags) ? hashTags.split(",") : [];
         this.sourceCodeUrl = sourceCodeUrl;
         this.demoUrl = demoUrl;
         this.hasSourceCodeUrl = (!!sourceCodeUrl) && (sourceCodeUrl.trim().length > 0);
@@ -27,7 +25,7 @@ export class Project {
     /**
      * Список хештегов проекта.
      */
-    public readonly hashTags: HashTag[];
+    public readonly hashTags: string[];
 
     /**
      * Ссылка на исходный код.

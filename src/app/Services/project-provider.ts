@@ -18,37 +18,31 @@ export class ProjectProvider {
                 'бот telegram для домашнего сервера на .Net Core',
                 'https://github.com/BooTheHamster/iznakurnoz.Bot',
                 null,
-                HashTags.netcore,
-                HashTags.telegram),
+                "netcore,telegram"),
             new Project(
                 'leetCodeTests',
                 'тестовые задачи с leetcode.com на .NET',
                 'https://github.com/BooTheHamster/LeetCodeTests',
                 null,
-                HashTags.net),
+                "net6"),
             new Project(
                 'ElecTap',
                 'прототип клик-игры',
                 'https://github.com/BooTheHamster/electap',
                 null,
-                HashTags.typescript,
-                HashTags.canvas,
-                HashTags.excaliburEngine,
-                HashTags.angular),
+                "typescript,canvas,excaliburEngine,angular"),
             new Project(
                 'JustScripts',
                 'резервные копии скриптов на python, powershell',
                 'https://github.com/BooTheHamster/scripts',
                 null,
-                HashTags.python,
-                HashTags.powershell),
+                "python,powershell"),
             new Project(
                 'SDL2 Test',
                 'приложение для изучения библиотеки SDL2',
                 'https://github.com/BooTheHamster/sdl2-test',
                 null,
-                HashTags.netcore,
-                HashTags.sdl2)
+                "netcore,sdl2")
         ];
     }
 

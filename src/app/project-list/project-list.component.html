@@ -4,17 +4,19 @@
     <div class="project-title">
       <a *ngIf="project.hasDemoUrl"
          href="{{project.demoUrl}}">{{project.name}}</a>
-      <a *ngIf="project.hasSourceCodeUrl"
+      <a *ngIf="project.hasSourceCodeUrl && !project.hasDemoUrl"
          href="{{project.sourceCodeUrl}}">{{project.name}}</a>
     </div>
-    <span>//</span>
+    <span class="separator">//</span>
     <span class="description">{{project.description}}</span>
+    <span class="separator">//</span>
+    <span class="source-code-link"
+          *ngIf="project.hasSourceCodeUrl">
+      <a href="{{project.sourceCodeUrl}}">исходный код</a>
+    </span>
   </div>
   <div class="tags">
-    <div *ngFor="let hashtag of project.hashTags">{{hashtag.text}}</div>
-    <div *ngIf="project.hasSourceCodeUrl">
-      <a href="{{project.sourceCodeUrl}}">исходный код</a>
-    </div>
+    <div *ngFor="let hashtag of project.hashTags">#{{hashtag}}</div>
   </div>
 </div>
 <div>

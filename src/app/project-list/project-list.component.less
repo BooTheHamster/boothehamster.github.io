@@ -1,47 +1,69 @@
+@project-font     : 1.1rem;
+@tags-font        : @project-font * 0.8;
+@base-color       : #454138;
+@color            : lighten(@base-color, 30);
+@font-color-light : #dcd8c0;
+
 .tags {
-    font-size     : 1rem;
+    font-size     : @tags-font;
     display       : flex;
     flex-direction: row;
-}
+    flex-wrap     : wrap;
 
-.tags div {
-    margin-top: 2px;
-}
-
-.tags a {
-    margin-left: 0.5rem;
+    div {
+        margin-right: 0.2rem;
+    }
 }
 
 .project {
     margin-left  : 2%;
     margin-bottom: 2%;
+    width        : fit-content;
+    margin       : 0;
+    padding      : 0;
+    margin-bottom: 0.6rem;
 }
 
 .title {
     display       : flex;
     flex-direction: row;
-    font-size     : 1.3rem;
+    font-size     : @project-font;
     align-items   : flex-start;
+    margin-bottom : 0.2rem;
+
+    a {
+        background-color: @color;
+        color           : @font-color-light;
+        padding         : 0;
+        padding-left    : 0.2rem;
+        padding-right   : 0.2rem;
+        padding-bottom  : 2px;
+        margin-top      : 0;
+        margin-bottom   : auto;
+    }
+
+    .separator {
+        margin-left : 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+    .source-code-link {
+        a {
+            background-color: transparent;
+            color           : @base-color;
+            padding         : 0;
+            margin          : 0;
+        }
+    }
 }
 
 .project-title {
     min-width: fit-content;
+    padding  : 0;
 }
 
-@base-color: #454138;
-@color     : lighten(@base-color, 25);
-
-.title a {
-    background-color: @color;
-    color           : #dcd8c0;
-    padding         : 0.2rem;
-    padding-top     : 0.1rem;
-}
-
-.title span {
-    padding-left: 0.2rem;
-}
-
-.project-title {
-    padding: 0;
+.hashtag {
+    padding     : 0;
+    margin      : 0;
+    margin-right: 0.2rem;
 }
