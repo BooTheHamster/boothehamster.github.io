@@ -1,13 +1,12 @@
-import { ProjectProvider } from './Services/project-provider';
-import { ProjectListComponent } from './project-list/project-list.component';
-import { PersonalInfoComponent } from './personal-info/personal-info.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { RouterModule, Routes } from "@angular/router";
 
-import { AppComponent } from './app.component';
-import { PersonProvider } from './Services/person-provider';
-import { ProjectLinkComponent } from './project-link/project-link.component';
+import { AppComponent } from "./app.component";
+import { PersonalInfoComponent } from "./personal-info/personal-info.component";
+import { ProjectListComponent } from "./project-list/project-list.component";
+import { PersonProvider } from "./Services/person-provider";
+import { ProjectProvider } from "./Services/project-provider";
 
 const appRoutes: Routes = [
     { path: '', component: ProjectListComponent },
@@ -18,8 +17,7 @@ const appRoutes: Routes = [
     declarations: [
         AppComponent,
         PersonalInfoComponent,
-        ProjectListComponent,
-        ProjectLinkComponent
+        ProjectListComponent
     ],
     imports: [
         BrowserModule,
