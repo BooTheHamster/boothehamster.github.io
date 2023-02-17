@@ -1,5 +1,2 @@
-# boothehamster.github.io.source
-http://boothehamster.github.io page source code
+### Персональная страница 
 
-###### 30.11.2018
-ng init personal-page
