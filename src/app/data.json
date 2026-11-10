@@ -1,0 +1,46 @@
+{
+    "person": {
+        "name": "Олег Севостьянов",
+        "advancedSkills": ["C#", "Delphi"],
+        "basicSkills": [".NET Framework / .Net Core / .NET 6 / .NET 8", "HTML", "CSS", "TypeScript", "Angular"],
+        "hobbySkills": ["python", "powershell", "javascript", "ms sql", "postgresql"],
+        "birthday": "1978-06-01"
+    },
+    "projects": [
+        {
+            "name": "iznakurnoz.Bot",
+            "description": "бот telegram для домашнего сервера на .Net Core",
+            "sourceCodeUrl": "https://github.com/BooTheHamster/iznakurnoz.Bot",
+            "demoUrl": null,
+            "hashTags": "netcore,telegram"
+        },
+        {
+            "name": "leetCodeTests",
+            "description": "тестовые задачи с leetcode.com на .NET",
+            "sourceCodeUrl": "https://github.com/BooTheHamster/LeetCodeTests",
+            "demoUrl": null,
+            "hashTags": "net6"
+        },
+        {
+            "name": "ElecTap",
+            "description": "прототип клик-игры",
+            "sourceCodeUrl": "https://github.com/BooTheHamster/electap",
+            "demoUrl": null,
+            "hashTags": "typescript,canvas,excaliburEngine,angular"
+        },
+        {
+            "name": "JustScripts",
+            "description": "резервные копии скриптов на python, powershell",
+            "sourceCodeUrl": "https://github.com/BooTheHamster/scripts",
+            "demoUrl": null,
+            "hashTags": "python,powershell"
+        },
+        {
+            "name": "SDL2 Test",
+            "description": "приложение для изучения библиотеки SDL2",
+            "sourceCodeUrl": "https://github.com/BooTheHamster/sdl2-test",
+            "demoUrl": null,
+            "hashTags": "netcore,sdl2"
+        }
+    ]
+}

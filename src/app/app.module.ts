@@ -10,7 +10,7 @@ import { ProjectProvider } from "./Services/project-provider";
 
 const appRoutes: Routes = [
     { path: '', component: ProjectListComponent },
-    { path: '**', component: AppComponent },
+    { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
